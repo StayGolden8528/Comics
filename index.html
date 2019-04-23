@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Project 2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script defer src="https://use.fontawesome.com/releases/v5.0.12/js/all.js" integrity="sha384-Voup2lBiiyZYkRto2XWqbzxHXwzcm4A5RfdfG6466bu5LqjwwrjXCMBQBLMWh7qR" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="styles/style.css"/>
+</head>
+<body>
+    <div class="wrapper-main">
+        <header>
+            <div class="wrapper-header" id="home">
+                <label for="show-menu" class="show-menu">
+                    <div id="nav-icon1">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </label>
+                <input type="checkbox" id="show-menu" name="toggle">
+                <!-- <nav> -->
+                <ul class="navigation">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Film & TV</a></li>
+                    <li><a href="#">Comic News</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <!-- </nav> -->
+            </div>    
+        </header>
+        <main>
+            <img src="assets/spiderman.png">
+            <div class="logo" id="logo">
+                <a href="https://www.comic-con.org/wca/purchasebadges"><img class="banner" src="assets/comicbanner.jpg"></a>  
+            </div>
+            <div class="searchBar">
+                <form id="newSearch" method="get">
+                <input type="text" id="search" placeholder="Character Search" class="textinput" name="q" size="15" maxlength="120">
+                <input type="submit" value="search" id="myBtn">
+                </form>
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close">&times;</span>
+                        </div>
+                        <div class="modal-insert" id="modal-insert"></div>
+                        <div id="spinner" class="spinner"></div>
+                        <div class="modal-footer">
+                            <h3>Powered by: Superhero API</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="icons"> 
+            <img src="assets/icon1.jpg">
+            <img src="assets/icon5.JPG"> 
+            <img id="ironman" src="assets/ironman.png">
+            <img src="assets/icon3.jpg">
+            <img src="assets/icon2.png">
+        </div>
+        <div class="topNews">
+            <h2>Top News</h2>
+        </div>
+        <div class="carousel" data-flickity='{ "autoPlay": true }''>
+            <div class="carousel-cell"><img src="assets/goku.png" alt=""></div>
+            <div class="carousel-cell"><img src="assets/shazam.png" alt=""></div>
+            <div class="carousel-cell"><img src="assets/avengers.png" alt=""></div>
+            <div class="carousel-cell"><img src="assets/aquaman.png" alt=""></div> 
+        </div>
+        <div class="container">
+            <div class="topStory">
+                <h2>Top Story</h2>
+            </div>
+            <div class="smallville">
+                <h3>Smallville Star <a href="https://en.wikipedia.org/wiki/Allison_Mack">Alison Mack</a> Pleads Guilty in Sex Trafficking Case</h3>
+                <h4>by Evangelia Galanis – on Apr 08, 2019 in TV, TV News</h4>
+                <img src="assets/allison.jpg">
+            </div>
+            <div class="smallvilleStory">
+                <p>Allison Mack, the actress best known for her role as Chloe Sullivan on Smallville has plead guilty to charges stemming from her involvement with NXIVM, a cult-like self-help group.</p>
+                
+                <p>Earlier today, Mack plead guilty to charges in a federal case, stating that the manipulated women into becoming sex
+                slaves for NXIVM's leader.</p>
+            </div>
+            <div class="readMore">
+                <button><a href="https://globalnews.ca/news/5142286/allison-mack-pleads-guilty-nxivm/">Continue to Full Story</a></button>
+            </div>
+            <div class="wrapper-aside">
+                <div class="aside1">
+                    <div class="film">
+                        <h2>Film & TV</h2>
+                        <div>
+                            <h3>'Son of Krypton' the destroyer?? </h3>
+                            <a href="#"><img src="assets/brightburn.jpg"></a>
+                        </div>
+                        <div>
+                            <h3>Another streaming service coming in November</h3>
+                            <a href="#"><img src="assets/disney.jpg"></a>
+                        </div>
+                        <div>
+                            <h3>'Avengers: Endgame' is Stan Lee's final Marvel cameo</h3>
+                            <a href="#"><img src="assets/stanlee.jpg"></a>
+                        </div>
+                        <div>
+                            <h3>Hellboy Just Unseated Venom As the Weirdest Comic Book Movie</h3>
+                            <a href="#"><img src="assets/hellboy.jpg"></a>
+                        </div>
+                        <div>
+                            <h3>Steven Yeun is The Traveler in New The Twilight Zone Episode 4 Promo</h3>
+                            <a href="#"><img src="assets/twilightzone.jpg"></a>
+                        </div>
+                        <div>
+                            <h3>James Gunn's THE SUICIDE SQUAD Will Draw From John Ostrander's Comic Run and Hints at Idris Elba's New Character</h3>
+                            <a href="#"><img src="assets/suicidesquad.jpeg"></a>
+                        </div>
+                    </div>    
+                </div>
+                <div class="aside2">
+                    <div class="news">
+                        <h2>Comic News</h2>
+                        <div>
+                            <h3>“On a Sunbeam,” the Sci-Fi Comic That Reimagines Utopia</h3>
+                            <a href="#"><img src="assets/sunbeam.jpg"></a>
+                        </div>
+                        <div>
+                            <h3>The Undertaker coming to Falls Comic Con</h3>
+                            <a href="#"><img src="assets/undertaker.jpg"></a>
+                        </div>
+                        <div>
+                            <h3>Marvel Announces New 'Star Wars' Creative Team, New Comics Focusing on Finn, Rey and More</h3>
+                            <a href="#"><img src="assets/rey.png"></a>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>    
+            <footer>
+            <div class="footer">
+                <div class="footConnect">
+                    <div class="social"><a href="#"><i class="fab fa-facebook-f fa-2x"></i></a></div>
+                    <div class="social"><a href="#"><i class="fab fa-twitter fa-2x"></i></a></div>
+                    <div class="social"><a href="#"><i class="fab fa-google-plus-g fa-2x"></i></a></div>	<div class="social"><a href="#"><i class="fab fa-instagram fa-2x"></i></a></div>
+                </div>
+                <p class="copyright">Copyright © 2018 Bobby Comic News - All rights reserved made by Bobby Brice
+                </p>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+
+
+
+    
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
