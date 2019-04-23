@@ -387,7 +387,7 @@ main {
 .carousel-cell {
   object-fit: contain;
   margin: 10px 10px;
-  width: 66%;
+  width: 100%;
   height: 60vh;
   display: flex;
   flex-wrap: wrap;
@@ -707,9 +707,31 @@ main {
   }
 }
 
+.altCarousel {
+  display: none;
+}
+
 @media screen and (max-width: 1230px) {
   .wrapper-aside {
     flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1010px) {
+  .carousel {
+    display: none;
+  }
+
+  .altCarousel {
+    max-width: 100%;
+    display: block;
+    text-align: center;
+    object-fit: scale-down;
+  }
+
+  .altCarousel img {
+    max-width: 100%;
+    padding: 20px;
   }
 }
 
