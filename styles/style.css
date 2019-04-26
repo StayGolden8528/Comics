@@ -29,8 +29,6 @@ body {
 /* hulk green = rgb(12, 122, 12);*/
 
 body {
-/* background-color: #15008a;
-background-image: url("https://www.transparenttextures.com/patterns/cubes.png"); */
 background-color: #7acf8c;
 background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23289839'/%3E%3Cstop offset='1' stop-color='%23289839' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%236bc6e7'/%3E%3Cstop offset='1' stop-color='%236bc6e7' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%231194b8'/%3E%3Cstop offset='1' stop-color='%231194b8' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%237acf8c'/%3E%3Cstop offset='1' stop-color='%237acf8c' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23082e0c'/%3E%3Cstop offset='1' stop-color='%23082e0c' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23915ffc'/%3E%3Cstop offset='1' stop-color='%23915ffc' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
 background-attachment: fixed;
@@ -192,6 +190,7 @@ main {
   display: flex;
   align-items: center;
   background-image: url("../assets/background4.png");
+  background-size: cover;
 }
 
 .logo {
@@ -245,7 +244,7 @@ main {
   font-size: 2rem;
   background-color: #430C60;
   ;
-  margin: auto;
+  margin: 0 auto;
   padding: 0;
   border: 1px solid #888;
   width: fit-content;
@@ -342,8 +341,8 @@ main {
   margin: 0;
   padding: 65px 10px 16px 0;
   color: white;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
 }
 
 #modal-insert {
@@ -357,8 +356,7 @@ main {
 }
 
 .modal-footer {
-  padding-top: 75px;
-  padding-left: 35px;
+  padding-left: 25px;
   background-color: #430C60;
   color: white;
 }
@@ -705,6 +703,9 @@ main {
   .logo  {
     display: none;
   }
+  body{
+  background-image: url("../assets/background1.jpg");
+  }
 }
 
 .altCarousel {
@@ -739,6 +740,29 @@ main {
   .icons {
     display: none;
   }
+  body {
+    background-image: url("../assets/background2.png");
+  }
+
+  main {
+    background-size: inherit;
+  }
+}
+
+@media screen and (max-width: 695px) {
+  #modal-insert {
+    display: block;
+  }
+
+  .modal-body {
+    text-align: center;
+    padding: 0;
+  }
+
+  .modal-footer {
+    padding-top: 0;
+
+  }
 }
 
 
@@ -764,6 +788,10 @@ main {
     padding:20px 0;
     justify-content:center;
   } 
+
+  body {
+     background-image: url("../assets/background3.png");
+  }
   
   .modal-header img {
     padding: 20px;

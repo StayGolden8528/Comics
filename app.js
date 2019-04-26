@@ -39,7 +39,7 @@ app.getComic = function (userInput) {  //app.searchQuery is the userInput argume
         
     })
     .fail(function (err) {
-        $('#modal-insert').append("....Sorry - Character Not Found!",'<img src="assets/errors.png">');
+        $('#modal-insert').append('<img src="assets/errors.png">');
         $('#spinner').removeClass('spinner');
         console.error("Result Not Found");
         });
