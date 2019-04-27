@@ -612,7 +612,6 @@ main {
   display: flex;
   margin: 0 auto;
   justify-content: center;
-  /* flex-direction: column; */
   width: 100%;
 }
 
@@ -629,13 +628,11 @@ main {
 
 .aside1 {
   display: flex;
-  /* max-width: 50%; */
   margin: 0;
 }
 
 .aside2 {
   display: flex;
-  /* max-width: 50%; */
   margin: 0;
 }
 
